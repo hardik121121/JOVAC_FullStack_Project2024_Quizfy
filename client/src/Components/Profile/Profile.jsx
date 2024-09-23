@@ -20,7 +20,7 @@ export const Profile = () => {
         <img src="./profile.gif" alt="prfile" className="w-1/2 h-64" />
         <h1 className="ml-8 w-1/2 mt-32 text-2xl text-sky-600  ">
           {" "}
-          Welcome! {userName}👋
+          Welcome to Quizfy! {userName}👋
         </h1>
       </div>
       <div className="border-red-500 absolute  bg-teal-300 rounded-2xl right-24 top-44 border-2 mb-8 p-1 pl-2  pr-2 ">

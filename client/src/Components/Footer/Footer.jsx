@@ -15,7 +15,7 @@ export const Footer = () => {
                 fontWeight: "bolder",
               }}
             >
-              MERN-Quiz-App
+              Quizfy-MERN_Quiz_APP
             </h3>
             <p className="text-white text-xs pr-4 xl:text-sm">
               WHERE PASSION MEETS PERFECTION !
@@ -125,7 +125,7 @@ export const Footer = () => {
         </div>
       </div>
       <p className="text-white text-center mt-4 pb-4">
-        MERN Quiz App Designed and Developed By Hardik Arora.
+        MERN Quiz App Designed and Developed By Hardik, Harsh, Pradeep and Mayank.
       </p>
     </div>
   );
