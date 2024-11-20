@@ -224,3 +224,11 @@ export const postQuizResult = (obj) => (dispatch) => {
       dispatch(postUserResultFailure(err));
     });
 };
+
+export const setQuizResult = (result) => {
+  return {
+    type: "SET_QUIZ_RESULT",
+    payload: result,
+  };
+};
+
