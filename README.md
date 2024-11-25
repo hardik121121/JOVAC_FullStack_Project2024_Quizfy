@@ -89,16 +89,7 @@ To develop a centralized platform for quizzes catering to academic needs, ensuri
 
 ---
 
-## **📸 Screenshots**
-### **Student Dashboard**
-🖥️  
-![Student Dashboard](https://via.placeholder.com/600x400)
 
-### **Admin Panel**
-🔧  
-![Admin Panel](https://via.placeholder.com/600x400)
-
----
 
 ## **🔮 Future Enhancements**
 - 🏆 **Leaderboards**: Display top-performing students.  
