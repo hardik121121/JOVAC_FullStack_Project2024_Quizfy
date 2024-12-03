@@ -20,7 +20,7 @@ export const Quiz = (props) => {
   const [disable, setDisable] = useState(null);
 
   // Timer: Total quiz duration in seconds (e.g., 10 minutes = 600 seconds)
-  const totalQuizTimeInSeconds = 600;
+  const totalQuizTimeInSeconds = 50;
 
   const handleQue = (index) => {
     setDisable(index);

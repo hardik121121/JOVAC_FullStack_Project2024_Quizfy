@@ -13,6 +13,22 @@ const init = {
   questions: [],
   Alluser: [],
   ans: [],
+  userAttempts: [
+    {
+      date: "2024-11-01",
+      score: 85,
+      timeSpent: 15,
+      status: "Pass",
+      difficulty: "Medium",
+    },
+    {
+      date: "2024-11-10",
+      score: 70,
+      timeSpent: 20,
+      status: "Fail",
+      difficulty: "Hard",
+    },
+  ],
 };
 
 export const QuizReducer = (state = init, action) => {
@@ -64,13 +80,11 @@ export const QuizReducer = (state = init, action) => {
         error: payload,
         loading: false,
       };
-
     case types.GETUSERID:
       return {
         ...state,
         userId: payload,
       };
-
     case types.GETUSERNAME:
       return {
         ...state,
@@ -91,7 +105,6 @@ export const QuizReducer = (state = init, action) => {
         userId: null,
         userName: null,
       };
-    //username
     case types.GETADMINNAME:
       return {
         ...state,
@@ -99,7 +112,6 @@ export const QuizReducer = (state = init, action) => {
         userId: null,
         userName: null,
       };
-
     case types.GET_ALL_USER_DATA_REQUEST:
       return {
         ...state,
@@ -132,6 +144,11 @@ export const QuizReducer = (state = init, action) => {
         isLoading: false,
         isError: false,
         result: payload,
+      };
+    case "ADD_USER_ATTEMPT": // Add new user attempt to the state
+      return {
+        ...state,
+        userAttempts: [...state.userAttempts, payload],
       };
     default:
       return state;

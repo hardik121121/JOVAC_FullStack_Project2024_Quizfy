@@ -13,6 +13,7 @@ import { Quizes } from "./Components/QuizNew/Quizes.jsx";
 import { Navbarnew } from "./Components/Navbar/Navbarnew.jsx";
 import { Resultshow } from "./Pages/Resultshow.jsx";
 import { ShowAllAnswers } from "./Pages/ShowAllAnswers.jsx";
+import Dashboard from "./Components/Dashboard.jsx"; // Import the Dashboard component
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/profile" element={<ProfileMain />} />
         <Route path="/result" element={<Resultshow />} />
         <Route path="/showallanswer" element={<ShowAllAnswers />} />
+        <Route path="/dashboard" element={<Dashboard />} /> {/* Added Dashboard route */}
       </Routes>
       <Footer />
     </div>
